@@ -5,15 +5,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Daily Quote</title>
+    <link rel="stylesheet" href="../css/styles.css">
 </head>
-<body>
+<body onload="getDate(); generateQuote();"loadPage;">
     <div class="nav">
         <a href="../index.html">Home Page</a>
     </div>
 
-    <button type="button" onclick="getDate();">Get Date</button>
+    <button type="button" onclick="generateQuote();">Another One</button>
 
-    <p id="text_area">Current Date</p>
+    <p id="date_area">Current Date</p>
+
+    <p id="quote_area"></p>
+
+    <p id="source_area"></p>
+
+    <img id="quote_image_area"></img>
 
     <script src="../js/daily_quote.js">
     </script>
