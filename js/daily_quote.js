@@ -2,12 +2,22 @@
 const QUOTES = [["You miss 100% of the shots you don't take - Wayne Gretzky", "Michael Scott"],
                 ["Try not to become a man of success, but rather try to become a man of value.", 
                 "Albert Einstein"],
-                ["I'm all jacked up on Mountain Dew", "Texas Ranger, Son of Ricky Bobby"],
-                ["Bears. Beets. Battlestar Galactica", "Dwight Shrute Impressionist"],
+                ["All Gas, No Brakes", "Andrew Callaghan"],
+                ["Respect is Earned. Not Given", "Unknown"],
                 ["In learning you will teach, and in teaching you will learn.", "Phil Collins"],
                 ["When you're living in a van down by the river.", "Matt Foley (Modivational Speaker)"],
-                ["while(!( succeed = try()));","Sixth Google Image Result for 'Coding Quotes'"],
-                ["Nothing... Nothing at all!!! (One Piece Fans Know)", "Roronoa Zoro"]
+                ["while(!( succeed = try()));","Intel"],
+                ["Nothing... Nothing at all!!! (One Piece Fans Know)", "Roronoa Zoro"],
+                ["How can we be excpected to teach children to learn to read if they can't even fit indside the building?",
+                "Zoolander"],
+                ["Remember when a female singer would drop a beautiful chorus and then Eminem or B.O.B. would come out of nowhere to yell at us?",
+                "Meme Sent by Friend"],
+                ["The whole is more than the sum of of its parts.", "Aristotle"],
+                ["I just want to do cool stuff.","Rob Corddry"],
+                ["Life moves pretty fast. If you don't stop and look around once in a while, you could miss it.",
+                "Ferris Bueller"],
+                ["Rule no. 1 is never lose money. Rule no. 2 is to never forget Rule no. 1.", "Warren Buffett"]
+
                 ];
 
 const MONTHS = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October",
@@ -29,15 +39,28 @@ function getDate(){
 
 // Make get random quote from list of favourite quotes
 function generateQuote(){
-    var quote_index = Math.floor((Math.random()*QUOTES.length));
-    if (QUOTES[quote_index] == document.getElementById('quote_area').innerHTML) {
-        if (quote_index == QUOTES.length) {
-            quote_index = 0;
-        } else {
-            quote_index = quote_index + 1;
-        }
+    /*
+    if (document.getElementById('quote_area').innerHTML == "not loaded") {
+        curr_date = new Date();
+        var day = curr_date.getDate();
+        var curr_quote_index = Math.floor(day % 14);
+    
+    } else {
+        curr_quote_index = QUOTES.indexOf([document.getElementById('quote_area').innerHTML,
+                                               document.getElementById('source_area').innerHTML])
     }
-    var quote = QUOTES[quote_index];    
+    
+    
+    
+    if (curr_quote_index == QUOTES.length) {
+        var quote_index = 0;
+    } else {
+        quote_index = curr_quote_index + 1;
+    }
+    */
+    
+
+    var quote = QUOTES[2];    
     document.getElementById('quote_area').innerHTML = quote[0];
     document.getElementById('source_area').innerHTML = "- " + quote[1];
     var image_string = "../images/quote_image_" + quote_index + ".jpg";
