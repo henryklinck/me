@@ -39,28 +39,16 @@ function getDate(){
 
 // Make get random quote from list of favourite quotes
 function generateQuote(){
-    /*
-    if (document.getElementById('quote_area').innerHTML == "not loaded") {
-        curr_date = new Date();
-        var day = curr_date.getDate();
-        var curr_quote_index = Math.floor(day % 14);
-    
-    } else {
-        curr_quote_index = QUOTES.indexOf([document.getElementById('quote_area').innerHTML,
-                                               document.getElementById('source_area').innerHTML])
+    var quote_index = Math.floor((Math.random()*QUOTES.length));
+    if (QUOTES[quote_index] == document.getElementById('quote_area').innerHTML) {
+        if (quote_index == QUOTES.length) {
+            quote_index = 0;
+        } else {
+            quote_index = quote_index + 1;
+        }
     }
-    
-    
-    
-    if (curr_quote_index == QUOTES.length) {
-        var quote_index = 0;
-    } else {
-        quote_index = curr_quote_index + 1;
-    }
-    */
-    
 
-    var quote = QUOTES[2];    
+    var quote = QUOTES[quote_index];    
     document.getElementById('quote_area').innerHTML = quote[0];
     document.getElementById('source_area').innerHTML = "- " + quote[1];
     var image_string = "../images/quote_image_" + quote_index + ".jpg";
