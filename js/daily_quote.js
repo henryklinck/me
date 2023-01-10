@@ -16,7 +16,9 @@ const QUOTES = [["You miss 100% of the shots you don't take - Wayne Gretzky", "M
                 ["I just want to do cool stuff.","Rob Corddry"],
                 ["Life moves pretty fast. If you don't stop and look around once in a while, you could miss it.",
                 "Ferris Bueller"],
-                ["Rule no. 1 is never lose money. Rule no. 2 is to never forget Rule no. 1.", "Warren Buffett"]
+                ["Rule no. 1 is never lose money. Rule no. 2 is to never forget Rule no. 1.", "Warren Buffett"],
+                ["In the short run, the market is a voting machine but in the long run, it is a weighing machine.", 
+                "Benjamin Graham"]
 
                 ];
 
