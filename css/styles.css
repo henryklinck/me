@@ -150,16 +150,19 @@ img {
 }
   
 .contact_image img {
-    width: 50px;
+    width: 80px;
     margin: 8px;
 
 }
   
 .contact_info {
     margin-left: 10%;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 20px;
     padding-left: 20px;
+}
+
+.contact_info p {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: large;
 }
 
 .contact_info a {
