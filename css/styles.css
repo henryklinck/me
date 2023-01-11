@@ -126,6 +126,10 @@ img {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-align: left;
 }
+
+.proj img {
+    width: 40%;
+}
   
   /* Clear floats after the columns */
 .projects {
