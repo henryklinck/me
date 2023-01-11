@@ -1,6 +1,13 @@
-/* */
+/* Index Page */
 
-ul {
+h1 {
+    font-size: x-large;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+
+}
+
+.nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -8,11 +15,11 @@ ul {
     background-color: #47c7fc;
 }
   
-li {
+.nav li {
     float: right;
 }
 
-li a {
+.nav li a {
     display: block;
     color: black;
     text-align: center;
@@ -21,8 +28,16 @@ li a {
 }
   
 /* Change the link color to #111 (black) on hover */
-li a:hover {
+.nav li a:hover {
     background-color: #a9a9a9;
+}
+
+p {
+    font-size: medium;
+    font-display: Geneva;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+
 }
 
 .centre {
@@ -37,10 +52,13 @@ img {
     height: auto;
 }
 
+/* Quotes Page */
+
 .quote_button {
 
     background-color: #448000;
-    border: none;
+    border: 2px solid;
+    border-color: #448000;
     color: white;
     padding: 20px;
     text-align: center;
@@ -49,10 +67,10 @@ img {
     font-size: 16px;
     margin: auto;
     margin-top: 15px;
-    transform: translate();
 }
 
 .quote_button:hover {
+    border-color: #448000;
     background-color: white; /* Green */
     color: #448000;
   }
@@ -72,7 +90,7 @@ img {
 }
 
 #quote_image_area {
-    width: 70%;
+    height: 50%;
     display: block;
     margin-left: auto;
     margin-right: auto;
